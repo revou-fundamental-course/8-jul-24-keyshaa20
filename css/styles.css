@@ -126,3 +126,9 @@ input[type=number] {
 .obese {
     color: var(--obese);
 }
+
+@media only screen and (max-width: 425px) {
+    main {
+        flex-direction: column;
+    }
+}

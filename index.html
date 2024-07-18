@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="./js/js.scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Main Title -->
+    <header class="main-title">
+        <h1>BMI Calculator</h1>
+    </header>
+    <main>
+        <!-- left content -->
+        <section class="main-content">
+            <!-- Main Article -->
+             <article>
+                <p class="input-content-maintitle">BMI adalah singkatan dari Body Mass Index, yang merupakan alat sederhana untuk memperkirakan kategori berat badan seseorang berdasarkan tinggi dan berat badan.</p>
+            </article>
+
+            <!-- Form -->
+             <section>
+                <form>
+                    <div>
+                        <div class="Gender">Gender</div>
+                        <input type="radio" id="selection-man"><label for="selection-man">Laki-laki</label>
+                        <input type="radio" id="selection-woman"><label for="selection-woman">Perempuan</label>
+                    </div>
+                    <div>
+                        <label for="weight">Weight (Kg)</label>
+                        <input type="number" id="weight" required>
+                    </div>
+                    <div>
+                        <label for="age">Age (th)</label>
+                        <input type="number" id="age" required/>
+                    </div>
+                    <div>
+                        <label for="height">Height (Cm)</label>
+                        <input type="number" id="height" required>
+                    </div>
+                    <div>
+                        <button type="button" onclick="calculate()">Submit</button>
+                        <button type="button" onclick="reset()">Reset</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Form Article -->
+             <section>
+                <header>
+                    <h2>Keunggulan Fitur</h2>
+                </header>
+                <article>
+                    <p>
+                        <h4 class="input-content">1. Kemudahan Pengguna</h4>
+                        <ul type="square" class="input-list">
+                            <li>Kalkulator BMI umumnya memiliki antarmuka yang sederhana dan intuitif, sehingga mudah digunakan oleh pengguna.</li>
+                            <li>Pengguna hanya perlu memasukkan tinggi dan berat badan, dan kalkulator akan secara otomatis menghitung nilai BMI.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h4 class="input-content">2. Portabilitas dan Akses</h4>
+                        <ul type="square" class="input.list">
+                            <li>Banyak kalkulator BMI tersedia secara online, sehingga dapat diakses dari berbagai perangkat dan di mana saja.</li>
+                            <li>Beberapa juga tersedia sebagai aplikasi mobile, memudahkan penggunaan di mana pun dan kapan pun.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h4 class="input-content">3. Personalisasi</h4>
+                        <ul type="square" class="input.list">
+                            <li>Beberapa kalkulator BMI menawarkan opsi untuk menyesuaikan perhitungan berdasarkan usia, jenis kelamin, atau faktor-faktor lain.</li>
+                            <li>Ini dapat memberikan hasil yang lebih akurat dan relevan bagi pengguna.</li>
+                        </ul>
+                    </p>
+                </article>
+            </section>
+        </section>
+        
+        <!-- Right Content -->
+        <section class="main-content">
+            <!-- Result Article -->
+             <Article>
+                <header>
+                    <h1>Result</h1>
+                </header>
+                
+                <!-- Result Section -->
+                 <section class="result">
+                    <h3>Hasil BMI anda adalah:</h3>
+
+                    <p id="result">00.00</p>
+
+                    <p id="keterangan">-</p>
+                 </section>
+                 
+                <!-- Result Article -->
+                 <section class="bmi-scale">
+                    <div style="--color: var(--underweight)">
+                        <h4>Underweight</h4>
+                        <p>&lt; 18.5</p>
+                    </div>
+
+                    <div style="--color: var(--normal)">
+                        <h4>Normal</h4>
+                        <p>18.5 - 25</p>
+                    </div>
+
+                    <div style="--color: var(--overweight)">
+                        <h4>Overweight</h4>
+                        <p>25 - 30</p>
+                    </div>
+
+                    <div style="--color: var(--obese)">
+                        <h4>Obese</h4>
+                        <p>≥ 30</p>
+                    </div>
+                 </section>
+                 
+                <!-- General Information -->
+                 <section>
+                    <p class="input-generalinfo">Nilai BMI yang berada dalam rentang normal (18.5 - 24.9) menunjukkan bahwa berat badan seseorang seimbang dengan tinggi badannya dan berada dalam kondisi yang sehat. Sementara nilai BMI yang berada di luar rentang normal mengindikasikan adanya permasalahan terkait berat badan, baik kelebihan maupun kekurangan, yang dapat berdampak pada kesehatan jika tidak ditangani dengan baik.</p>
+                    <p class="input-generalinfo">Perhitungan BMI hanyalah salah satu alat untuk menilai status gizi seseorang. Penilaian yang lebih komprehensif sebaiknya juga mempertimbangkan faktor lain seperti usia, jenis kelamin, komposisi tubuh, dan riwayat kesehatan. Konsultasi dengan dokter atau tenaga kesehatan professional sangat direkomendasikan untuk mengetahui kondisi kesehatan seseorang secara lebih menyeluruh.</p>
+                 </section>
+             </Article>
+         </section>
+    </main>
+</body>
+
+</html>

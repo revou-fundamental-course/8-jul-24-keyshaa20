@@ -1,0 +1,128 @@
+/* ini css */
+
+body {
+    background-color: rgb(246, 179, 252);
+}
+
+.main-title {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content {
+    flex: 1;
+    padding: 12px;
+}
+
+.Gender {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form {
+    padding: 10px;
+    background-color: #B2DFDB;
+    width: 500px;
+    border-radius: 8px;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=number]:focus {
+    border: 3px solid #555;
+  }
+
+  .result {
+    text-align: center;
+    background-color: #B2DFDB;
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .result #result {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .result #keterangan {
+    margin-top: 0px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .input-content {
+    margin-bottom: 0;
+  }
+
+.input-list {
+    margin: 0;
+    width: 500px;
+}
+
+.input.list {
+    margin-top: 0;
+    width: 500px;
+}
+
+.input-content-maintitle {
+    width: 500px;
+}
+
+.bmi-scale {
+    display: flex;
+    margin-top: 50px;
+}
+
+.bmi-scale div {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 7px solid var(--color);
+}
+
+.bmi-scale h4 {
+    font-size: 0.75rem;
+    color:  #153147;
+}
+
+:root {
+    --underweight: orange;
+    --normal: green;
+    --overweight: lightcoral;
+    --obese:crimson;
+    }
+
+    .input-generalinfo {
+        width: 500px;
+    }
+
+.underweight {
+    color: var(--underweight);
+}
+
+.normal {
+    color: var(--normal);
+}
+
+.overweight {
+    color: var(--overweight);
+}
+
+.obese {
+    color: var(--obese);
+}
